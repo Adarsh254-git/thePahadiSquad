@@ -34,7 +34,6 @@ const Hero = () => {
             <img
               src={img}
               alt={`Trek slide ${index}`}
-              loading="lazy"
               className="w-full h-full object-cover object-center"
             />
 

@@ -105,7 +105,6 @@ const CarRental = () => {
                   <img
                     src={car.image}
                     alt={car.name}
-                    loading="lazy"
                     className={`w-full h-full object-cover transition-transform duration-700 ${isActive ? "scale-110" : "group-hover:scale-105"}`}
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-slate-800 via-transparent to-transparent opacity-40"></div>

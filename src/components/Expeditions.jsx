@@ -478,7 +478,6 @@ const Expeditions = () => {
                     <img
                       src={trek.image}
                       alt={trek.place}
-                      loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute top-4 left-4 bg-orange-600 text-[10px] font-black text-white px-3 py-1 rounded-full uppercase tracking-widest">

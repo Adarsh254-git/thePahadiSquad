@@ -125,7 +125,6 @@ const Contact = () => {
             <img
               src="/images/hadimba.jpg"
               alt="Mountain Base"
-              loading="lazy"
               className="absolute inset-0 w-full h-full object-cover opacity-50 lg:opacity-100"
             />
             {/* Responsive Gradient Overlay */}
