@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 // import img1 from "../assets/grass.jpg";
 // import img2 from "../assets/camp.jpg";
 // import img3 from "../assets/glide.jpg";
-// import img4 from "../assets/hadimba.jpg";
+// import img4 from "../assets/hadimba.webp";
 const Hero = () => {
   const images = [
-    "/images/grass.jpg",
-    "/images/camp.jpg",
-    "images/glide.jpg",
-    "images/hadimba.jpg",
+    "/images/grass.webp",
+    "/images/camp.webp",
+    "images/glide.webp",
+    "images/hadimba.webp",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -55,12 +55,19 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            <button className="bg-orange-600 hover:bg-orange-500 text-white px-8 py-3 rounded-full font-bold transition-all transform hover:scale-105 active:scale-95 text-sm sm:text-base shadow-lg">
+            <a
+              href="#expeditions"
+              className="bg-orange-600 hover:bg-orange-500 text-white px-8 py-3 rounded-full font-bold transition-all transform hover:scale-105 active:scale-95 text-sm sm:text-base shadow-lg inline-block text-center"
+            >
               Explore Now
-            </button>
-            <button className="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded-full font-bold transition-all text-sm sm:text-base">
+            </a>
+
+            <a
+              href="#about"
+              className="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded-full font-bold transition-all text-sm sm:text-base inline-block text-center"
+            >
               Learn More
-            </button>
+            </a>
           </div>
 
           <div className="absolute bottom-6 md:bottom-10 flex gap-2">

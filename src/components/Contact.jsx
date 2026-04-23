@@ -36,7 +36,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-12 md:py-24 bg-[#2C2D2D] text-white px-4 md:px-8 scroll-mt-20"
+      className="py-12 md:py-24 bg-black text-white px-4 md:px-8 scroll-mt-20"
     >
       <div className="max-w-7xl mx-auto">
         <div className="mb-10 md:mb-16 text-center md:text-left">
@@ -123,7 +123,7 @@ const Contact = () => {
 
           <div className="lg:col-span-7 relative min-h-112.5 md:min-h-125 order-1 lg:order-2">
             <img
-              src="/images/hadimba.jpg"
+              src="/images/hadimba.webp"
               alt="Mountain Base"
               className="absolute inset-0 w-full h-full object-cover opacity-50 lg:opacity-100"
             />

@@ -64,6 +64,17 @@ const CarRental = () => {
       price: "₹3,500",
       tag: "Mountain Expert",
     },
+    {
+      id: 5, // Or your next available ID
+      name: "Maruti Suzuki Jimny",
+      image: "/images/jimny.webp",
+      type: "Off-Road 4x4",
+      seats: "4 Seater",
+      transmission: "Manual/Auto",
+      fuel: "Petrol",
+      price: "₹4,500",
+      tag: "4x4 Adventure",
+    },
   ];
 
   return (

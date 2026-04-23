@@ -5,7 +5,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white pt-16 pb-8 px-4">
+    <footer className="bg-[#2C2D2D] text-white pt-16 pb-8 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-slate-800 pb-12">
         <div>
           <div className="shrink-0 mb-6">
@@ -27,7 +27,7 @@ const Footer = () => {
             </a>
           </div>
 
-          <p className="text-slate-400 text-sm leading-relaxed mb-6 max-w-xs">
+          <p className="text-white text-sm leading-relaxed mb-6 max-w-xs">
             Your ultimate companion for Himalayan adventures. We bring you
             closer to the peaks with expert-led treks and rugged expedition
             rentals.
@@ -36,7 +36,7 @@ const Footer = () => {
 
         <div>
           <h3 className="text-lg font-bold mb-6">Quick Links</h3>
-          <ul className="space-y-4 text-slate-400 text-sm">
+          <ul className="space-y-4 text-white text-sm">
             <li>
               <a
                 href="#home"
@@ -74,7 +74,7 @@ const Footer = () => {
 
         <div>
           <h3 className="text-lg font-bold mb-6">Support</h3>
-          <ul className="space-y-4 text-slate-400  text-sm">
+          <ul className="space-y-4 text-white  text-sm">
             <li>
               <a href="#" className="hover:text-orange-500 transition-colors">
                 Safety Guidelines
@@ -100,7 +100,7 @@ const Footer = () => {
 
         <div>
           <h3 className="text-lg font-bold mb-6">Contact Us</h3>
-          <ul className="space-y-4 text-slate-400  text-sm">
+          <ul className="space-y-4 text-white  text-sm">
             <li className="flex items-center gap-3">
               <MapPin size={18} className="text-orange-500" />
               <span>Himachal Pradesh, India</span>
@@ -118,7 +118,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto pt-8 flex justify-center items-center text-slate-400 text-sm font-medium border-t border-white">
+      <div className="max-w-7xl mx-auto pt-8 flex justify-center items-center text-white text-sm font-medium border-t border-white">
         <p>
           © {new Date().getFullYear()} ThePahadi
           <span className="text-orange-600">Squad</span>. All rights reserved.

@@ -178,7 +178,7 @@ const Expeditions = () => {
 
       {
         id: 14,
-        image: "/images/glide.jpg",
+        image: "/images/glide.webp",
         place: "Bir Billing",
         district: "Kangra",
         type: "Trek/Aero",
@@ -332,9 +332,7 @@ const Expeditions = () => {
             UPCOMING <span className="text-orange-600">EXPEDITIONS</span>
           </h2>
           <p className="mt-4 text-white text-sm md:text-lg max-w-xl">
-            Curated trails for every explorer. Select a district and start your
-            journey with{" "}
-            <span className="text-white font-bold">ThePhadiSquad</span>.
+            Curated trails for every explorer.
           </p>
         </div>
 
@@ -344,61 +342,50 @@ const Expeditions = () => {
               <h3 className="text-2xl md:text-3xl font-bold text-white uppercase tracking-tighter">
                 {district}
               </h3>
-              <div className="h-0.5 grow bg-linear-to-r from-orange-600 to-transparent opacity-50"></div>
+              <div className="h-0.5 grow bg-gradient-to-r from-orange-600 to-transparent opacity-50"></div>
             </div>
 
-            {/* Added items-start to prevent other cards from stretching */}
-            <div className="flex items-start overflow-x-auto gap-6 pb-10 snap-x no-scrollbar cursor-grab ">
+            <div className="flex items-start overflow-x-auto gap-6 pb-10 snap-x no-scrollbar cursor-grab">
               {districtTreks.map((trek) => (
                 <div
                   key={trek.id}
                   className="min-w-70 md:min-w-87.5 w-70 md:w-87.5 shrink-0 snap-start bg-[#121212] rounded-3xl overflow-hidden border border-white/5 hover:border-orange-600/50 transition-all duration-500 group"
                 >
-                  <div className="relative h-60 overflow-hidden">
+                  {/* Image Container with Overlay */}
+                  <div className="relative h-80 overflow-hidden">
                     <img
                       src={trek.image}
                       alt={trek.place}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
+
+                    {/* Gradient Overlay for Text Readability */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80" />
+
+                    {/* Top Labels */}
                     <div className="absolute top-4 left-4 bg-orange-600 text-[10px] font-black text-white px-3 py-1 rounded-full uppercase tracking-widest">
                       {trek.type}
                     </div>
-                    <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-[12px] font-bold text-white px-3 py-1 rounded-full border border-white/10">
-                      ⭐ {trek.rating}
-                    </div>
-                  </div>
 
-                  <div className="p-6">
-                    <h4 className="text-2xl font-bold text-white mb-3 group-hover:text-orange-500 transition-colors">
-                      {trek.place}
-                    </h4>
-
-                    <div
-                      className={`overflow-hidden transition-all duration-500 ease-in-out ${expandedId === trek.id ? "max-h-40 mb-4 opacity-100" : "max-h-0 opacity-0"}`}
-                    >
-                      <p className="text-gray-400 text-sm leading-relaxed border-l-2 border-orange-600 pl-4 italic">
+                    {/* Bottom Info (Place & Short Description) */}
+                    <div className="absolute bottom-0 left-0 p-6 w-full">
+                      <h4 className="text-2xl font-bold text-white mb-2 group-hover:text-orange-500 transition-colors">
+                        {trek.place}
+                      </h4>
+                      <p className="text-gray-200 text-xs leading-relaxed line-clamp-3">
                         {trek.description}
                       </p>
                     </div>
+                  </div>
 
-                    <div className="flex gap-3 mt-4">
-                      <button
-                        onClick={() => toggleDetails(trek.id)}
-                        className={`flex-1 py-3 rounded-xl text-xs font-black uppercase tracking-widest transition-all ${
-                          expandedId === trek.id
-                            ? "bg-white text-black"
-                            : "bg-transparent border border-white/20 text-white hover:bg-white/10"
-                        }`}
-                      >
-                        {expandedId === trek.id ? "Close" : "Details"}
-                      </button>
-                      <a
-                        href="#contact"
-                        className="flex-1 bg-orange-600 hover:bg-orange-500 text-white py-3 rounded-xl text-xs font-black uppercase tracking-widest transition-all active:scale-95 shadow-lg shadow-orange-900/20 flex items-center justify-center text-center"
-                      >
-                        Book
-                      </a>
-                    </div>
+                  {/* Booking Button Only */}
+                  <div className="p-4 bg-[#121212]">
+                    <a
+                      href="#contact"
+                      className="w-full bg-orange-600 hover:bg-orange-500 text-white py-3 rounded-xl text-xs font-black uppercase tracking-widest transition-all active:scale-95 flex items-center justify-center text-center"
+                    >
+                      Book This Trip
+                    </a>
                   </div>
                 </div>
               ))}

@@ -6,15 +6,19 @@ import TravelPlans from "./components/TravelPlans";
 import CarRental from "./components/CarRental";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import AboutUs from "./components/AboutUs";
 
 const App = () => {
   return (
     <>
       <Navbar />
       <Hero />
+
       <Expeditions />
-      <TravelPlans />
+      <AboutUs />
       <CarRental />
+      <TravelPlans />
+
       <Contact />
       <Footer />
     </>
