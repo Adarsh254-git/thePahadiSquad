@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from "react";
-import img1 from "../assets/grass.jpg";
-import img2 from "../assets/camp.jpg";
-import img3 from "../assets/glide.jpg";
-import img4 from "../assets/hadimba.jpg";
+// import img1 from "../assets/grass.jpg";
+// import img2 from "../assets/camp.jpg";
+// import img3 from "../assets/glide.jpg";
+// import img4 from "../assets/hadimba.jpg";
 const Hero = () => {
-  const images = [img1, img2, img3, img4];
+  const images = [
+    "/images/grass.jpg",
+    "/images/camp.jpg",
+    "images/glide.jpg",
+    "images/hadimba.jpg",
+  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -29,6 +34,7 @@ const Hero = () => {
             <img
               src={img}
               alt={`Trek slide ${index}`}
+              loading="lazy"
               className="w-full h-full object-cover object-center"
             />
 

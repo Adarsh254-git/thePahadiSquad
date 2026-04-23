@@ -7,10 +7,10 @@ import {
   ChevronDown,
   ChevronUp,
 } from "lucide-react";
-import gurkha from "../assets/gurkha.jpg";
-import thar from "../assets/thar.jpg";
-import hilux from "../assets/hilux.jpg";
-import bolero from "../assets/bolero.webp";
+// import gurkha from "../assets/gurkha.jpg";
+// import thar from "../assets/thar.jpg";
+// import hilux from "../assets/hilux.jpg";
+// import bolero from "../assets/bolero.webp";
 
 const CarRental = () => {
   const [activeCar, setActiveCar] = useState(null);
@@ -23,7 +23,7 @@ const CarRental = () => {
     {
       id: 1,
       name: "Force Gurkha 4x4",
-      image: gurkha,
+      image: "/images/gurkha.jpg",
       type: "Extreme Off-road",
       seats: "4 Seater",
       transmission: "Manual",
@@ -34,7 +34,7 @@ const CarRental = () => {
     {
       id: 2,
       name: "Mahindra Thar",
-      image: thar,
+      image: "/images/thar.jpg",
       type: "All Terrain",
       seats: "4 Seater",
       transmission: "Automatic/MT",
@@ -45,7 +45,7 @@ const CarRental = () => {
     {
       id: 3,
       name: "Toyota Hilux",
-      image: hilux,
+      image: "/images/hilux.jpg",
       type: "Premium Pickup",
       seats: "5 Seater",
       transmission: "Automatic",
@@ -56,7 +56,7 @@ const CarRental = () => {
     {
       id: 4,
       name: "Mahindra Bolero",
-      image: bolero,
+      image: "/images/bolero.webp",
       type: "Rugged SUV",
       seats: "7 Seater",
       transmission: "Manual",
@@ -105,6 +105,7 @@ const CarRental = () => {
                   <img
                     src={car.image}
                     alt={car.name}
+                    loading="lazy"
                     className={`w-full h-full object-cover transition-transform duration-700 ${isActive ? "scale-110" : "group-hover:scale-105"}`}
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-slate-800 via-transparent to-transparent opacity-40"></div>

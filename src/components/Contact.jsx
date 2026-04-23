@@ -8,7 +8,6 @@ import {
   MessageSquare,
   Clock,
 } from "lucide-react";
-import sideImg from "../assets/hadimba.jpg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -124,8 +123,9 @@ const Contact = () => {
 
           <div className="lg:col-span-7 relative min-h-112.5 md:min-h-125 order-1 lg:order-2">
             <img
-              src={sideImg}
+              src="/images/hadimba.jpg"
               alt="Mountain Base"
+              loading="lazy"
               className="absolute inset-0 w-full h-full object-cover opacity-50 lg:opacity-100"
             />
             {/* Responsive Gradient Overlay */}

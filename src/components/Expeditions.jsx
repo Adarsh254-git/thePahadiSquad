@@ -1,33 +1,33 @@
 import React, { useState } from "react";
 
-import hamptaImg from "../assets/hamptapass.jpg";
-import beaskundImg from "../assets/beaskund.jpg";
-import bijliImg from "../assets/bijliImg.avif";
-import parvatiImg from "../assets/parvatiImg.jpg";
-import solangImg from "../assets/solang.jpg";
-import kasolImg from "../assets/kasol.jpg";
-import pinImg from "../assets/pin.webp";
-import trek3 from "../assets/kheer.jpg";
-import spitiImg from "../assets/spiti.png";
-import kunzumImg from "../assets/kunzum.jpg";
-import triundImg from "../assets/triund.jpg";
-import kareriImg from "../assets/kareri.webp";
-import mcleoImg from "../assets/mchleo.jpg";
-import chandratalImg from "../assets/chandrtaal.jpg";
-import choptaImg from "../assets/chopta.jpg";
-import birImg from "../assets/glide.jpg";
-import manimaheshImg from "../assets/manimahesh.webp";
-import kharota from "../assets/kharota.avif";
-import stadium from "../assets/stadium.jpg";
-import kazaImg from "../assets/kaza.jpg";
-import shikariImg from "../assets/shikaridevi.jpg";
-import barotImg from "../assets/barot.webp";
-import prasharImg from "../assets/prashar.jpg";
+// import hamptaImg from "../assets/hamptapass.jpg";
+// import beaskundImg from "../assets/beaskund.jpg";
+// import bijliImg from "../assets/bijliImg.avif";
+// import parvatiImg from "../assets/parvatiImg.jpg";
+// import solangImg from "../assets/solang.jpg";
+// import kasolImg from "../assets/kasol.jpg";
+// import pinImg from "../assets/pin.webp";
+// import trek3 from "../assets/kheer.jpg";
+// import spitiImg from "../assets/spiti.png";
+// import kunzumImg from "../assets/kunzum.jpg";
+// import triundImg from "../assets/triund.jpg";
+// import kareriImg from "../assets/kareri.webp";
+// import mcleoImg from "../assets/mchleo.jpg";
+// import chandratalImg from "../assets/chandrtaal.jpg";
+// import choptaImg from "../assets/chopta.jpg";
+// import birImg from "../assets/glide.jpg";
+// import manimaheshImg from "../assets/manimahesh.webp";
+// import kharota from "../assets/kharota.avif";
+// import stadium from "../assets/stadium.jpg";
+// import kazaImg from "../assets/kaza.jpg";
+// import shikariImg from "../assets/shikari.jpg";
+// import barotImg from "../assets/barot.webp";
+// import prasharImg from "../assets/prashar.jpg";
 
-import mallRoadImg from "../assets/mallroad.jpg";
-import joginiImg from "../assets/jogini.avif";
-import rohtangImg from "../assets/rohtang.webp";
-import atalTunnelImg from "../assets/atal.jpg";
+// import mallRoadImg from "../assets/mallroad.jpg";
+// import joginiImg from "../assets/jogini.avif";
+// import rohtangImg from "../assets/rohtang.webp";
+// import atalTunnelImg from "../assets/atal.jpg";
 const Expeditions = () => {
   const [expandedId, setExpandedId] = useState(null);
 
@@ -38,7 +38,7 @@ const Expeditions = () => {
   const treks = [
     {
       id: 1,
-      image: hamptaImg,
+      image: "/images/hamptapass.jpg",
       place: "Hampta Pass",
       district: "Kullu",
       type: "Trek",
@@ -49,7 +49,7 @@ const Expeditions = () => {
 
     {
       id: 2,
-      image: beaskundImg,
+      image: "/images/beaskund.jpg",
       place: "Beas Kund",
       district: "Kullu",
       type: "Trek",
@@ -60,7 +60,7 @@ const Expeditions = () => {
 
     {
       id: 3,
-      image: bijliImg,
+      image: "/images/bijliImg.avif",
       place: "Bijli Mahadev",
       district: "Kullu",
       type: "Trek",
@@ -71,7 +71,7 @@ const Expeditions = () => {
 
     {
       id: 4,
-      image: parvatiImg,
+      image: "/images/parvatiImg.jpg",
       place: "Parvati Valley",
       district: "Kullu",
       type: "Valley/Scenic",
@@ -82,7 +82,7 @@ const Expeditions = () => {
 
     {
       id: 5,
-      image: solangImg,
+      image: "/images/solang.jpg",
       place: "Solang Valley",
       district: "Kullu",
       type: "Valley/Scenic",
@@ -93,7 +93,7 @@ const Expeditions = () => {
 
     {
       id: 6,
-      image: kasolImg,
+      image: "/images/kasol.jpg",
       place: "Kasol",
       district: "Kullu",
       type: "Valley/Scenic",
@@ -104,7 +104,7 @@ const Expeditions = () => {
 
     {
       id: 7,
-      image: pinImg,
+      image: "/images/pin.webp",
       place: "Pin Parvati",
       district: "Lahaul & Spiti",
       type: "Trek",
@@ -115,7 +115,7 @@ const Expeditions = () => {
 
     {
       id: 8,
-      image: kazaImg,
+      image: "/images/kaza.jpg",
       place: "Kaza High Altitude",
       district: "Lahaul & Spiti",
       type: "Trek",
@@ -126,7 +126,7 @@ const Expeditions = () => {
 
     {
       id: 9,
-      image: spitiImg,
+      image: "/images/spiti.png",
       place: "Spiti Valley",
       district: "Lahaul & Spiti",
       type: "Valley/Scenic",
@@ -137,7 +137,7 @@ const Expeditions = () => {
 
     {
       id: 10,
-      image: chandratalImg,
+      image: "/images/chandrtaal.jpg",
       place: "Chandratal",
       district: "Lahaul & Spiti",
       type: "Valley/Scenic",
@@ -148,7 +148,7 @@ const Expeditions = () => {
 
     {
       id: 11,
-      image: kunzumImg,
+      image: "/images/kunzum.jpg",
       place: "Kunzum Pass",
       district: "Lahaul & Spiti",
       type: "Valley/Scenic",
@@ -159,7 +159,7 @@ const Expeditions = () => {
 
     {
       id: 12,
-      image: triundImg,
+      image: "/images/triund.jpg",
       place: "Triund",
       district: "Kangra",
       type: "Trek",
@@ -170,7 +170,7 @@ const Expeditions = () => {
 
     {
       id: 13,
-      image: kareriImg,
+      image: "/images/kareri.webp",
       place: "Kareri Lake",
       district: "Kangra",
       type: "Trek",
@@ -181,7 +181,7 @@ const Expeditions = () => {
 
     {
       id: 14,
-      image: birImg,
+      image: "/images/glide.jpg",
       place: "Bir Billing",
       district: "Kangra",
       type: "Trek/Aero",
@@ -192,7 +192,7 @@ const Expeditions = () => {
 
     {
       id: 15,
-      image: mcleoImg,
+      image: "/images/mchleo.jpg",
       place: "Mcleodganj",
       district: "Kangra",
       type: "Valley/Scenic",
@@ -205,7 +205,7 @@ const Expeditions = () => {
 
     {
       id: 16,
-      image: manimaheshImg,
+      image: "/images/manimahesh.webp",
       place: "Manimahesh Kailash",
       district: "Chamba",
       type: "Trek",
@@ -215,7 +215,7 @@ const Expeditions = () => {
     },
     {
       id: 17,
-      image: prasharImg, // Ensure you import this at the top
+      image: "/images/prashar.jpg", // Ensure you import this at the top
       place: "Prashar Lake",
       district: "Mandi",
       type: "Trek",
@@ -225,7 +225,7 @@ const Expeditions = () => {
     },
     {
       id: 18,
-      image: shikariImg, // Ensure you import this at the top
+      image: "/images/shikari.jpg", // Ensure you import this at the top
       place: "Shikari Devi",
       district: "Mandi",
       type: "Trek",
@@ -235,7 +235,7 @@ const Expeditions = () => {
     },
     {
       id: 19,
-      image: barotImg, // Ensure you import this at the top
+      image: "/images/barot.webp", // Ensure you import this at the top
       place: "Barot Valley",
       district: "Mandi",
       type: "Expedition",
@@ -245,7 +245,7 @@ const Expeditions = () => {
     },
     {
       id: 20,
-      image: rohtangImg, // Ensure import from your assets
+      image: "/images/rohtang.webp", // Ensure import from your assets
       place: "Rohtang Pass",
       district: "Kullu",
       type: "Expedition",
@@ -255,7 +255,7 @@ const Expeditions = () => {
     },
     {
       id: 21,
-      image: atalTunnelImg,
+      image: "/images/atal.jpg",
       place: "Atal Tunnel",
       district: "Kullu",
       type: "Expedition",
@@ -265,7 +265,7 @@ const Expeditions = () => {
     },
     {
       id: 22,
-      image: joginiImg,
+      image: "/images/jogini.avif",
       place: "Jogini Waterfalls",
       district: "Kullu",
       type: "Trek",
@@ -275,13 +275,33 @@ const Expeditions = () => {
     },
     {
       id: 23,
-      image: mallRoadImg,
+      image: "/images/mallroad.jpg",
       place: "Manali Mall Road",
       district: "Kullu",
       type: "City Spot",
       highlights: ["Local Culture", "Street Food", "Shopping Hub"],
       description:
         "The vibrant heart of Manali. From tasting local Siddu to shopping for handcrafted woolen shawls, the Mall Road is the ultimate basecamp for travelers preparing for their next big Himalayan adventure.",
+    },
+    {
+      id: 24,
+      image: "/images/stadium.jpg",
+      place: "Dharamshala Stadium",
+      district: "Kangra",
+      type: "Landmark",
+      highlights: ["Highest Cricket Ground", "Dhauladhar Backdrop"],
+      description:
+        "Arguably the most beautiful cricket stadium in the world. Situated at 4,780 ft, the HPCA stadium offers a surreal experience where the snow-capped Dhauladhar peaks act as a natural backdrop to the vibrant green outfield.",
+    },
+    {
+      id: 25,
+      image: "/images/fort.jpg",
+      place: "Kangra Fort",
+      district: "Kangra",
+      type: "Heritage",
+      highlights: ["Ancient History", "Royal Architecture"],
+      description:
+        "One of the oldest and largest forts in India, dating back to the Trigarta Kingdom mentioned in the Mahabharata. It stands at the confluence of the Banganga and Manjhi rivers, offering a glimpse into the grand royal history of the Himalayas.",
     },
 
     // {
@@ -458,6 +478,7 @@ const Expeditions = () => {
                     <img
                       src={trek.image}
                       alt={trek.place}
+                      loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute top-4 left-4 bg-orange-600 text-[10px] font-black text-white px-3 py-1 rounded-full uppercase tracking-widest">

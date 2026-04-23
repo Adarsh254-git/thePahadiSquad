@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/phadisquad.png";
+// import logo from "../assets/phadisquad.png";
 
 import { Mail, MapPin, Phone } from "lucide-react";
 
@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="shrink-0 mb-6">
             <a href="/" className="flex items-center gap-3 group">
               <img
-                src={logo}
+                src="/images/phadisquad.png"
                 alt="ThePhadiSquad Logo"
                 className="h-12 w-auto object-contain transition-transform group-hover:scale-105"
               />
