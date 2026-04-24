@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useRef } from "react";
 
 // import hamptaImg from "../assets/hamptapass.jpg";
 // import beaskundImg from "../assets/beaskund.jpg";
@@ -30,6 +30,7 @@ import React, { useMemo, useState } from "react";
 // import atalTunnelImg from "../assets/atal.jpg";
 const Expeditions = () => {
   const [expandedId, setExpandedId] = useState(null);
+  const scrollRefs = useRef({});
 
   const treks = useMemo(
     () => [
@@ -311,7 +312,16 @@ const Expeditions = () => {
       return acc;
     }, {});
   }, [treks]);
-
+  const scroll = (district, direction) => {
+    const container = scrollRefs.current[district];
+    if (container) {
+      const scrollAmount = 400; // Adjust based on card width
+      container.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
   const toggleDetails = (id) => {
     setExpandedId((prev) => (prev === id ? null : id));
   };
@@ -337,7 +347,7 @@ const Expeditions = () => {
         </div>
 
         {Object.entries(groupedTreks).map(([district, districtTreks]) => (
-          <div key={district} className="mb-20">
+          <div key={district} className="mb-20 relative group/section">
             <div className="flex items-center gap-4 mb-8">
               <h3 className="text-2xl md:text-3xl font-bold text-white uppercase tracking-tighter">
                 {district}
@@ -345,7 +355,27 @@ const Expeditions = () => {
               <div className="h-0.5 grow bg-linear-to-r from-orange-600 to-transparent opacity-50"></div>
             </div>
 
-            <div className="flex items-start overflow-x-auto gap-6 pb-10 snap-x no-scrollbar cursor-grab">
+            {/* Slider Navigation Buttons - Visible on LG only */}
+            <div className="hidden lg:flex absolute top-1/2 -translate-y-1/2 left-0 right-0 justify-between z-10 pointer-events-none px-2">
+              <button
+                onClick={() => scroll(district, "left")}
+                className="w-12 h-12 rounded-full bg-black/60 border border-white/20 text-white flex items-center justify-center hover:bg-orange-600 transition-all pointer-events-auto"
+              >
+                ←
+              </button>
+              <button
+                onClick={() => scroll(district, "right")}
+                className="w-12 h-12 rounded-full bg-black/60 border border-white/20 text-white flex items-center justify-center hover:bg-orange-600 transition-all pointer-events-auto"
+              >
+                →
+              </button>
+            </div>
+
+            {/* Scroll Container */}
+            <div
+              ref={(el) => (scrollRefs.current[district] = el)}
+              className="flex items-start overflow-x-auto gap-6 pb-10 snap-x no-scrollbar cursor-grab"
+            >
               {districtTreks.map((trek) => (
                 <div
                   key={trek.id}
@@ -358,14 +388,10 @@ const Expeditions = () => {
                       alt={trek.place}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-
                     <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent opacity-80" />
-
-                    {/* Top Labels */}
                     <div className="absolute top-4 left-4 bg-orange-600 text-[10px] font-black text-white px-3 py-1 rounded-full uppercase tracking-widest">
                       {trek.type}
                     </div>
-
                     <div className="absolute bottom-0 left-0 p-6 w-full">
                       <h4 className="text-2xl font-bold text-white mb-2 group-hover:text-orange-500 transition-colors">
                         {trek.place}

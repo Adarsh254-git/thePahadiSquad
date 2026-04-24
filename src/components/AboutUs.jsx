@@ -1,5 +1,15 @@
 import React from "react";
-import { Mountain, Map, Car, Tent, ShieldCheck, Globe } from "lucide-react";
+import {
+  Mountain,
+  Map,
+  Car,
+  Tent,
+  ShieldCheck,
+  Globe,
+  Users,
+  Home,
+  Activity,
+} from "lucide-react";
 
 const AboutUs = () => {
   const services = [
@@ -35,21 +45,12 @@ const AboutUs = () => {
               WE ARE <br />
               <span className="text-orange-600">THE PAHADI SQUAD</span>
             </h2>
-            <p className="text-white text-lg leading-relaxed mb-8">
-              "Born in the heart of the Himalayas, we aren’t just a travel
-              agency; we are a community of explorers. Our mission is to bridge
-              the gap between raw wilderness and safe exploration, ensuring
-              every journey into the mountains leaves you with stories, not just
-              photos. We believe that the true beauty of Himachal Pradesh isn't
-              found on the main roads, but in the silence of the high-altitude
-              deserts of Spiti, the hidden trails of the Dhauladhar range, and
-              the ancient culture preserved in our remote villages. From the
-              mist-covered valleys of Kullu to the jagged, snow-capped peaks of
-              Chamba, we take you where the air is thinner and the spirit is
-              stronger. At ThePahadiSquad, we don't just show you the
-              mountains—we help you live them. Whether it’s navigating a rugged
-              4x4 trail in a Jimny or camping under the celestial Milky Way at
-              Chandratal, we provide the expertise and the heart to make the
+            <p className="text-white text-lg leading-relaxed mb-8 text-justify">
+              "Born in the heart of the Himalayas, we bridge the gap between raw
+              wilderness and safe exploration. At ThePahadiSquad, we go beyond
+              the main roads—from the high-altitude deserts of Spiti to the
+              jagged peaks of Chamba. Whether navigating 4x4 trails or camping
+              under the stars, we provide the heart and expertise to make the
               Himalayas feel like home."
             </p>
             <div className="flex flex-wrap gap-6">
@@ -63,6 +64,18 @@ const AboutUs = () => {
                 <Globe className="text-orange-600" />
                 <span className="text-white font-bold text-sm">
                   Eco-Friendly Travel
+                </span>
+                <Users className="text-orange-600" />
+                <span className="text-white font-bold text-sm">
+                  Local Pahadi Guides
+                </span>
+                <Home className="text-orange-600" />
+                <span className="text-white font-bold text-sm">
+                  Remote Village Stays
+                </span>
+                <Activity className="text-orange-600" />
+                <span className="text-white font-bold text-sm">
+                  24/7 Ground Support
                 </span>
               </div>
             </div>

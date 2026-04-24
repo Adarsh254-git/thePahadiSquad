@@ -59,7 +59,7 @@ const Navbar = () => {
                 <span className="text-lg font-bold tracking-tight text-white">
                   ThePahadi
                 </span>
-                <span className="text-md font-bold tracking-tight text-orange-500 -mt-1">
+                <span className="text-md font-bold tracking-tight text-orange-600 -mt-1">
                   Squad
                 </span>
               </div>
