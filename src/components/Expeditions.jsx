@@ -342,7 +342,7 @@ const Expeditions = () => {
               <h3 className="text-2xl md:text-3xl font-bold text-white uppercase tracking-tighter">
                 {district}
               </h3>
-              <div className="h-0.5 grow bg-gradient-to-r from-orange-600 to-transparent opacity-50"></div>
+              <div className="h-0.5 grow bg-linear-to-r from-orange-600 to-transparent opacity-50"></div>
             </div>
 
             <div className="flex items-start overflow-x-auto gap-6 pb-10 snap-x no-scrollbar cursor-grab">
@@ -351,23 +351,21 @@ const Expeditions = () => {
                   key={trek.id}
                   className="min-w-70 md:min-w-87.5 w-70 md:w-87.5 shrink-0 snap-start bg-[#121212] rounded-3xl overflow-hidden border border-white/5 hover:border-orange-600/50 transition-all duration-500 group"
                 >
-                  {/* Image Container with Overlay */}
                   <div className="relative h-80 overflow-hidden">
                     <img
                       src={trek.image}
+                      loading="lazy"
                       alt={trek.place}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
 
-                    {/* Gradient Overlay for Text Readability */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80" />
+                    <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent opacity-80" />
 
                     {/* Top Labels */}
                     <div className="absolute top-4 left-4 bg-orange-600 text-[10px] font-black text-white px-3 py-1 rounded-full uppercase tracking-widest">
                       {trek.type}
                     </div>
 
-                    {/* Bottom Info (Place & Short Description) */}
                     <div className="absolute bottom-0 left-0 p-6 w-full">
                       <h4 className="text-2xl font-bold text-white mb-2 group-hover:text-orange-500 transition-colors">
                         {trek.place}
@@ -378,7 +376,6 @@ const Expeditions = () => {
                     </div>
                   </div>
 
-                  {/* Booking Button Only */}
                   <div className="p-4 bg-[#121212]">
                     <a
                       href="#contact"

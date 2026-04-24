@@ -105,7 +105,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"}`}
+        className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"}`}
       >
         <div className="px-4 pt-2 pb-6 space-y-2 bg-black/95 border-t border-white/5">
           {navLinks.map((link) => (
