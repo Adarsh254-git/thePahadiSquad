@@ -84,7 +84,7 @@ const CarRental = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-left mb-16">
-          <h2 className="text-3xl md:text-5xl font-extrabold mb-6">
+          <h2 className=" text-3xl md:text-5xl font-extrabold mb-6">
             Rent Your <span className="text-orange-600">Expedition Rig</span>
           </h2>
           <p className="mt-4 text-white text-sm md:text-lg max-w-xl">
