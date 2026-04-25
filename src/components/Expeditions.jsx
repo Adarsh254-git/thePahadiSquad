@@ -301,6 +301,28 @@ const Expeditions = () => {
         description:
           "One of the oldest and largest forts in India, dating back to the Trigarta Kingdom mentioned in the Mahabharata. It stands at the confluence of the Banganga and Manjhi rivers, offering a glimpse into the grand royal history of the Himalayas.",
       },
+      {
+        id: 26,
+        image: "/images/pangong.webp",
+        place: "Pangong Tso",
+        district: "Ladakh",
+        category: "Other Frontiers",
+        type: "Expedition",
+        highlights: ["Changing Water Colors", "Indo-China Border"],
+        description:
+          "The legendary salt-water lake of the Trans-Himalayas. Situated at 14,270 feet, Pangong Tso is famous for changing colors from turquoise to deep blue. A true test for explorers seeking the ultimate high-altitude thrill.",
+      },
+      {
+        id: 27,
+        image: "/images/nubra1.jpg",
+        place: "Nubra Valley",
+        district: "Ladakh",
+        category: "Other Frontiers",
+        type: "Expedition",
+        highlights: ["Khardung La", "Hunder Sand Dunes"],
+        description:
+          "Crossing the Khardung La—one of the world's highest motorable passes—leads you to the cold desert of Nubra. Home to double-humped camels and white sand dunes framed by jagged snow peaks.",
+      },
     ],
     [],
   );
@@ -329,85 +351,101 @@ const Expeditions = () => {
   return (
     <section
       id="expeditions"
-      className="scroll-mt-20 bg-black py-16 px-6 overflow-hidden"
+      className="scroll-mt-20 bg-black py-12 px-4 overflow-hidden"
     >
       <style>{`
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-      `}</style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    `}</style>
 
       <div className="max-w-7xl mx-auto">
-        <div className="mb-16 text-left">
-          <h2 className="text-3xl md:text-5xl font-black text-white leading-tight">
+        <div className="mb-10 text-left px-2">
+          <h2 className="text-2xl md:text-4xl font-black text-white leading-tight">
             UPCOMING <span className="text-orange-600">EXPEDITIONS</span>
           </h2>
-          <p className="mt-4 text-white text-sm md:text-lg max-w-xl">
-            Curated trails for every explorer.
-          </p>
         </div>
 
         {Object.entries(groupedTreks).map(([district, districtTreks]) => (
-          <div key={district} className="mb-20 relative group/section">
-            <div className="flex items-center gap-4 mb-8">
-              <h3 className="text-2xl md:text-3xl font-bold text-white uppercase tracking-tighter">
+          <div key={district} className="mb-12 relative group/section">
+            {/* Section Heading */}
+            <div className="flex items-center gap-3 mb-6 px-2">
+              <h3 className="text-xl md:text-2xl font-bold text-white uppercase tracking-tighter">
                 {district}
               </h3>
-              <div className="h-0.5 grow bg-linear-to-r from-orange-600 to-transparent opacity-50"></div>
+              <div className="h-[1px] grow bg-gradient-to-r from-orange-600/50 to-transparent"></div>
             </div>
 
-            {/* Slider Navigation Buttons - Visible on LG only */}
-            <div className="hidden lg:flex absolute top-1/2 -translate-y-1/2 left-0 right-0 justify-between z-10 pointer-events-none px-2">
+            {/* Slider Buttons */}
+            <div className="hidden lg:flex absolute top-1/3 -translate-y-1/2 left-0 right-0 justify-between z-10 pointer-events-none">
               <button
                 onClick={() => scroll(district, "left")}
-                className="w-12 h-12 rounded-full bg-black/60 border border-white/20 text-white flex items-center justify-center hover:bg-orange-600 transition-all pointer-events-auto"
+                className="w-10 h-10 rounded-full bg-black/80 border border-white/10 text-white flex items-center justify-center hover:bg-orange-600 transition-all pointer-events-auto"
               >
                 ←
               </button>
               <button
                 onClick={() => scroll(district, "right")}
-                className="w-12 h-12 rounded-full bg-black/60 border border-white/20 text-white flex items-center justify-center hover:bg-orange-600 transition-all pointer-events-auto"
+                className="w-10 h-10 rounded-full bg-black/80 border border-white/10 text-white flex items-center justify-center hover:bg-orange-600 transition-all pointer-events-auto"
               >
                 →
               </button>
             </div>
 
-            {/* Scroll Container */}
             <div
               ref={(el) => (scrollRefs.current[district] = el)}
-              className="flex items-start overflow-x-auto gap-6 pb-10 snap-x no-scrollbar cursor-grab"
+              className="flex items-stretch overflow-x-auto gap-4 pb-6 snap-x no-scrollbar cursor-grab active:cursor-grabbing px-2"
             >
               {districtTreks.map((trek) => (
                 <div
                   key={trek.id}
-                  className="min-w-70 md:min-w-87.5 w-70 md:w-87.5 shrink-0 snap-start bg-[#121212] rounded-3xl overflow-hidden border border-white/5 hover:border-orange-600/50 transition-all duration-500 group"
+                  className="min-w-64 md:min-w-72 w-64 md:w-72 shrink-0 snap-start bg-[#0f0f0f] rounded-2xl overflow-hidden border border-white/5 hover:border-orange-600/30 transition-all duration-500 group flex flex-col"
                 >
-                  <div className="relative h-80 overflow-hidden">
+                  {/* Compact Image Container */}
+                  <div className="relative h-64 overflow-hidden">
                     <img
                       src={trek.image}
                       loading="lazy"
                       alt={trek.place}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent opacity-80" />
-                    <div className="absolute top-4 left-4 bg-orange-600 text-[10px] font-black text-white px-3 py-1 rounded-full uppercase tracking-widest">
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] via-transparent to-black/10" />
+
+                    {/* Badge */}
+                    <div className="absolute top-3 left-3 bg-orange-600 text-[8px] font-black text-white px-2 py-0.5 rounded-full uppercase tracking-widest z-20">
                       {trek.type}
                     </div>
-                    <div className="absolute bottom-0 left-0 p-6 w-full">
-                      <h4 className="text-2xl font-bold text-white mb-2 group-hover:text-orange-500 transition-colors">
+
+                    {/* Highlights Top-Right */}
+                    <div className="absolute top-3 right-3 flex flex-col items-end gap-1 z-20">
+                      {trek.highlights &&
+                        trek.highlights.slice(0, 2).map((highlight, idx) => (
+                          <span
+                            key={idx}
+                            className="text-[8px] font-bold text-white bg-black/40 backdrop-blur-sm border border-white/5 px-1.5 py-0.5 rounded uppercase tracking-wider"
+                          >
+                            {highlight}
+                          </span>
+                        ))}
+                    </div>
+
+                    {/* Bottom Text Overlay */}
+                    <div className="absolute bottom-0 left-0 p-4 w-full">
+                      <h4 className="text-lg font-bold text-white group-hover:text-orange-500 transition-colors truncate">
                         {trek.place}
                       </h4>
-                      <p className="text-gray-200 text-xs leading-relaxed line-clamp-3">
-                        {trek.description}
-                      </p>
                     </div>
                   </div>
 
-                  <div className="p-4 bg-[#121212]">
+                  {/* Compact Action Section */}
+                  <div className="p-3 bg-[#0f0f0f] flex flex-col gap-3">
+                    <p className="text-gray-400 text-[11px] leading-snug line-clamp-2 h-8">
+                      {trek.description}
+                    </p>
                     <a
                       href="#contact"
-                      className="w-full bg-orange-600 hover:bg-orange-500 text-white py-3 rounded-xl text-xs font-black uppercase tracking-widest transition-all active:scale-95 flex items-center justify-center text-center"
+                      className="w-full bg-orange-600 hover:bg-orange-500 text-white py-2.5 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all active:scale-95 flex items-center justify-center text-center"
                     >
-                      Book This Trip
+                      Book Trip
                     </a>
                   </div>
                 </div>

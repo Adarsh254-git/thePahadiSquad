@@ -1,5 +1,5 @@
 import React from "react";
-// import logo from "../assets/phadisquad.png";
+import { FaInstagram } from "react-icons/fa";
 
 import { Mail, MapPin, Phone } from "lucide-react";
 
@@ -105,14 +105,43 @@ const Footer = () => {
               <MapPin size={18} className="text-orange-500" />
               <span>Himachal Pradesh, India</span>
             </li>
-            <li className="flex items-center gap-3">
-              <Phone size={18} className="text-orange-500" />
-              <span>+91 78074 89354 </span>
-              <span>+91 78072 39274 </span>
+            <li className="flex items-start gap-3">
+              {/* Icon - Added mt-1 to align with the first line of text */}
+              <Phone size={18} className="text-orange-500 mt-1" />
+
+              {/* Numbers Column */}
+              <div className="flex flex-col">
+                <a
+                  href="tel:+917807489354"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  +91 78074 89354
+                </a>
+                <a
+                  href="tel:+917807239274"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  +91 78072 39274
+                </a>
+              </div>
             </li>
             <li className="flex items-center gap-3">
               <Mail size={18} className="text-orange-500" />
               <span>hello@thepahadisquad.com</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <a
+                href="https://www.instagram.com/shubham_parihar_007?igsh=MXFlaXYzOGZmdDdqdQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:text-orange-500 transition-colors group"
+              >
+                <FaInstagram
+                  size={18}
+                  className="text-orange-500 group-hover:scale-110 transition-transform"
+                />
+                <span>@thepahadisquad</span>
+              </a>
             </li>
           </ul>
         </div>
