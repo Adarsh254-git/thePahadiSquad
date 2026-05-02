@@ -115,21 +115,28 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-orange-600 hover:bg-orange-500 text-white py-3 md:py-4 rounded-xl font-bold text-xs md:text-sm flex items-center justify-center gap-2 md:gap-3 transition-all transform active:scale-95 shadow-lg shadow-orange-900/40"
+                className="relative w-full bg-orange-600 hover:bg-orange-500 text-white py-3 md:py-4 rounded-xl font-bold text-xs md:text-sm flex items-center justify-center gap-2 md:gap-3 transition-all transform active:scale-95 shadow-lg shadow-orange-900/40 overflow-hidden group"
               >
-                Send to WhatsApp <ArrowRight size={16} />
+                <div className="relative z-10 flex items-center gap-2 md:gap-3">
+                  <span>Send to WhatsApp</span>
+                  <ArrowRight
+                    size={16}
+                    className="transition-transform group-hover:translate-x-1"
+                  />
+                </div>
+
+                <div className="absolute bottom-0 left-0 w-full h-0 transition-all duration-500 ease-out bg-white/20 group-hover:h-[250%] -skew-y-6 origin-bottom-left"></div>
               </button>
             </form>
           </div>
 
-          {/* Contact Info Side */}
           <div className="lg:col-span-7 relative min-h-[450px] md:min-h-[500px] order-1 lg:order-2">
             <img
               src="/images/hadimba.webp"
               alt="Mountain Base"
               className="absolute inset-0 w-full h-full object-cover opacity-50 lg:opacity-100"
             />
-            {/* Responsive Gradient Overlay */}
+
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent lg:bg-gradient-to-r lg:from-[#1A1B1B] lg:via-[#1A1B1B]/90 lg:to-transparent"></div>
 
             <div className="absolute inset-0 flex flex-col justify-center p-6 md:p-16">
@@ -182,7 +189,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* Instagram - NEW SECTION */}
+                {/* Instagram */}
                 <div className="flex items-center gap-4 group">
                   <div className="bg-pink-600/20 p-3 rounded-xl group-hover:bg-pink-600 transition-all flex items-center justify-center">
                     <FaInstagram
@@ -216,7 +223,7 @@ const Contact = () => {
                     </p>
 
                     <p className="text-gray-200 text-xs md:text-lg font-bold">
-                      thepahadisquad@gmail.com
+                      sp347661@gmail.com
                     </p>
                   </div>
                 </div>

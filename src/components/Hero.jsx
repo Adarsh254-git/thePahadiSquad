@@ -57,9 +57,13 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <a
               href="#expeditions"
-              className="bg-orange-600 hover:bg-orange-500 text-white px-8 py-3 rounded-full font-bold transition-all transform hover:scale-105 active:scale-95 text-sm sm:text-base shadow-lg inline-block text-center"
+              className="relative bg-orange-600 hover:bg-orange-500 text-white px-8 py-3 rounded-full font-bold transition-all transform hover:scale-105 active:scale-95 text-sm sm:text-base shadow-lg inline-block text-center overflow-hidden group"
             >
-              Explore Now
+              {/* The Text Layer */}
+              <span className="relative z-10">Explore Now</span>
+
+              {/* The Mountain Peak Effect */}
+              <div className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 ease-out bg-white/20 group-hover:h-[200%] -skew-y-6 origin-bottom-left"></div>
             </a>
 
             <a

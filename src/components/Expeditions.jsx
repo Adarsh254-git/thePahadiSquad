@@ -337,7 +337,7 @@ const Expeditions = () => {
   const scroll = (district, direction) => {
     const container = scrollRefs.current[district];
     if (container) {
-      const scrollAmount = 400; // Adjust based on card width
+      const scrollAmount = 400;
       container.scrollBy({
         left: direction === "left" ? -scrollAmount : scrollAmount,
         behavior: "smooth",
@@ -372,7 +372,7 @@ const Expeditions = () => {
               <h3 className="text-xl md:text-2xl font-bold text-white uppercase tracking-tighter">
                 {district}
               </h3>
-              <div className="h-[1px] grow bg-gradient-to-r from-orange-600/50 to-transparent"></div>
+              <div className="h-px grow bg-linear-to-r from-orange-600/50 to-transparent"></div>
             </div>
 
             {/* Slider Buttons */}
@@ -408,7 +408,7 @@ const Expeditions = () => {
                       alt={trek.place}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] via-transparent to-black/10" />
+                    <div className="absolute inset-0 bg-linear-to-t from-[#0f0f0f] via-transparent to-black/10" />
 
                     {/* Badge */}
                     <div className="absolute top-3 left-3 bg-orange-600 text-[8px] font-black text-white px-2 py-0.5 rounded-full uppercase tracking-widest z-20">
@@ -443,9 +443,11 @@ const Expeditions = () => {
                     </p>
                     <a
                       href="#contact"
-                      className="w-full bg-orange-600 hover:bg-orange-500 text-white py-2.5 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all active:scale-95 flex items-center justify-center text-center"
+                      className="relative w-full bg-orange-600 hover:bg-orange-500 text-white py-2.5 rounded-lg text-[10px] font-black uppercase tracking-widest transition-all active:scale-95 flex items-center justify-center text-center overflow-hidden group"
                     >
-                      Book Trip
+                      <span className="relative z-10">Book Trip</span>
+
+                      <div className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 bg-white/20 group-hover:h-[160%] -skew-y-6 origin-bottom-left"></div>
                     </a>
                   </div>
                 </div>

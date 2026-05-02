@@ -40,7 +40,7 @@ const AboutUs = () => {
         {/* Header Section */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16 md:mb-24">
           <div className="order-2 lg:order-1">
-            <h2 className="text-4xl md:text-6xl font-black text-white leading-tight mb-6">
+            <h2 className="text-3xl md:text-5xl font-black text-white leading-tight mb-6">
               WE ARE <br />
               <span className="text-orange-600">THE PAHADI SQUAD</span>
             </h2>
@@ -120,9 +120,13 @@ const AboutUs = () => {
             </div>
             <a
               href="#contact"
-              className="w-full md:w-auto text-center bg-orange-600 hover:bg-orange-500 text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest transition-all"
+              className="relative w-full md:w-auto text-center bg-orange-600 hover:bg-orange-500 text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest transition-all overflow-hidden group active:scale-95 inline-flex items-center justify-center"
             >
-              Consult an Expert
+              {/* The Text Layer */}
+              <span className="relative z-10">Consult an Expert</span>
+
+              {/* The Mountain Peak Effect */}
+              <div className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 bg-white/20 group-hover:h-[200%] -skew-y-6 origin-bottom-left"></div>
             </a>
           </div>
         </div>

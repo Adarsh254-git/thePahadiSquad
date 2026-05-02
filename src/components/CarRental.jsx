@@ -178,9 +178,13 @@ const CarRental = () => {
                     </button>
                     <a
                       href="#contact"
-                      className="flex-1 bg-orange-600 hover:bg-orange-500 text-white py-3 rounded-xl text-xs font-black uppercase tracking-widest transition-all active:scale-95 shadow-lg shadow-orange-900/20 flex items-center justify-center text-center"
+                      className="relative flex-1 bg-orange-600 hover:bg-orange-500 text-white py-3 rounded-xl text-xs font-black uppercase tracking-widest transition-all active:scale-95 shadow-lg shadow-orange-900/20 flex items-center justify-center text-center overflow-hidden group"
                     >
-                      Rent Now
+                      {/* The Text Layer (z-10 ensures it stays above the peak) */}
+                      <span className="relative z-10">Rent Now</span>
+
+                      {/* The Mountain Peak Effect */}
+                      <div className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 bg-white/20 group-hover:h-[180%] -skew-y-6 origin-bottom-left"></div>
                     </a>
                   </div>
                 </div>
