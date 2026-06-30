@@ -76,14 +76,22 @@ const AboutUs = () => {
 
             <div
               className="relative overflow-hidden rounded-3xl border border-white/10 shadow-2xl 
-                  h-[300px] sm:h-[400px] lg:h-[450px]"
+                  h-75 sm:h-100 lg:h-112.5"
             >
               {" "}
               {/* Fixed heights for different screens */}
               <img
-                src="/images/about-hero.jpg"
+                src="https://res.cloudinary.com/dtkxhi52c/image/upload/f_auto,q_auto,w_800,c_fill/about-hero_f2lp0b"
+                srcSet={`
+    https://res.cloudinary.com/dtkxhi52c/image/upload/f_auto,q_auto,w_400,c_fill/about-hero_f2lp0b 400w,
+    https://res.cloudinary.com/dtkxhi52c/image/upload/f_auto,q_auto,w_800,c_fill/about-hero_f2lp0b 800w
+  `}
+                sizes="(max-width: 768px) 100vw, 800px"
                 alt="Mountain Expedition"
-                className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
+                loading="eager"
+                width="800"
+                height="500"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

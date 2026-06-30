@@ -5,10 +5,10 @@ import React, { useState, useEffect } from "react";
 // import img4 from "../assets/hadimba.webp";
 const Hero = () => {
   const images = [
-    "/images/grass.webp",
-    "/images/camp.webp",
-    "images/glide.webp",
-    "images/hadimba.webp",
+    "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782796897/grass_gharpd.webp",
+    "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797108/glide_phqtbr.webp",
+    "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797211/hadimba_bfugqz.webp",
+    "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797282/camp_gcybwg.webp",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,6 +34,7 @@ const Hero = () => {
             <img
               src={img}
               alt={`Trek slide ${index}`}
+              loading="eager"
               className="w-full h-full object-cover object-center"
             />
 

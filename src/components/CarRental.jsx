@@ -23,7 +23,8 @@ const CarRental = () => {
     {
       id: 1,
       name: "Force Gurkha 4x4",
-      image: "/images/gurkha.jpg",
+      image:
+        "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797416/gurkha_nzvoyo.jpg",
       type: "Extreme Off-road",
       seats: "4 Seater",
       transmission: "Manual",
@@ -34,7 +35,8 @@ const CarRental = () => {
     {
       id: 2,
       name: "Mahindra Thar",
-      image: "/images/thar.jpg",
+      image:
+        "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797478/thar_yycygu.jpg",
       type: "All Terrain",
       seats: "4 Seater",
       transmission: "Automatic/MT",
@@ -45,7 +47,8 @@ const CarRental = () => {
     {
       id: 3,
       name: "Toyota Hilux",
-      image: "/images/hilux.jpg",
+      image:
+        "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797517/hilux_dmngoo.jpg",
       type: "Premium Pickup",
       seats: "5 Seater",
       transmission: "Automatic",
@@ -56,7 +59,8 @@ const CarRental = () => {
     {
       id: 4,
       name: "Mahindra Bolero",
-      image: "/images/bolero.webp",
+      image:
+        "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797575/bolero_n3ceez.webp",
       type: "Rugged SUV",
       seats: "7 Seater",
       transmission: "Manual",
@@ -67,7 +71,8 @@ const CarRental = () => {
     {
       id: 5, // Or your next available ID
       name: "Maruti Suzuki Jimny",
-      image: "/images/jimny.webp",
+      image:
+        "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797608/jimny_pk93ai.webp",
       type: "Off-Road 4x4",
       seats: "4 Seater",
       transmission: "Manual/Auto",

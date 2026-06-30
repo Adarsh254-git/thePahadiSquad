@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="shrink-0 mb-6">
             <a href="/" className="flex items-center gap-3 group">
               <img
-                src="/images/phadisquad.png"
+                src="https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798801/cropped_circle_image_1_bbsh61.png"
                 alt="ThePhadiSquad Logo"
                 className="h-12 w-auto object-contain transition-transform group-hover:scale-105"
               />

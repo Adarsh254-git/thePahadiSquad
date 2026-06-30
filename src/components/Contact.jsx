@@ -130,14 +130,14 @@ const Contact = () => {
             </form>
           </div>
 
-          <div className="lg:col-span-7 relative min-h-[450px] md:min-h-[500px] order-1 lg:order-2">
+          <div className="lg:col-span-7 relative min-h-112.5 md:min-h-125 order-1 lg:order-2">
             <img
-              src="/images/hadimba.webp"
+              src="https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797211/hadimba_bfugqz.webp"
               alt="Mountain Base"
               className="absolute inset-0 w-full h-full object-cover opacity-50 lg:opacity-100"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent lg:bg-gradient-to-r lg:from-[#1A1B1B] lg:via-[#1A1B1B]/90 lg:to-transparent"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-black via-black/80 to-transparent lg:bg-linear-to-r lg:from-[#1A1B1B] lg:via-[#1A1B1B]/90 lg:to-transparent"></div>
 
             <div className="absolute inset-0 flex flex-col justify-center p-6 md:p-16">
               <h3 className="text-2xl md:text-3xl font-black mb-3 md:mb-4 text-white uppercase tracking-tighter leading-tight text-center md:text-left">

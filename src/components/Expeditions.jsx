@@ -36,7 +36,8 @@ const Expeditions = () => {
     () => [
       {
         id: 1,
-        image: "/images/hamptapass.jpg",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797686/hamptapass_mfzfav.jpg",
         place: "Hampta Pass",
         district: "Kullu",
         type: "Trek",
@@ -47,7 +48,8 @@ const Expeditions = () => {
 
       {
         id: 2,
-        image: "/images/beaskund.jpg",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797751/beaskund_knczqk.jpg",
         place: "Beas Kund",
         district: "Kullu",
         type: "Trek",
@@ -58,7 +60,8 @@ const Expeditions = () => {
 
       {
         id: 3,
-        image: "/images/bijliImg.avif",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797781/bijliImg_h9q2gu.avif",
         place: "Bijli Mahadev",
         district: "Kullu",
         type: "Trek",
@@ -69,7 +72,8 @@ const Expeditions = () => {
 
       {
         id: 4,
-        image: "/images/parvatiImg.jpg",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797829/parvatiImg_zz8ltk.jpg",
         place: "Parvati Valley",
         district: "Kullu",
         type: "Valley/Scenic",
@@ -80,7 +84,8 @@ const Expeditions = () => {
 
       {
         id: 5,
-        image: "/images/solang.jpg",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797863/solang_jd8zq2.jpg",
         place: "Solang Valley",
         district: "Kullu",
         type: "Valley/Scenic",
@@ -91,7 +96,8 @@ const Expeditions = () => {
 
       {
         id: 6,
-        image: "/images/kasol.jpg",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797890/kasol_tfraeb.jpg",
         place: "Kasol",
         district: "Kullu",
         type: "Valley/Scenic",
@@ -102,7 +108,8 @@ const Expeditions = () => {
 
       {
         id: 7,
-        image: "/images/pin.webp",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797917/pin_ukzlfn.webp",
         place: "Pin Parvati",
         district: "Lahaul & Spiti",
         type: "Trek",
@@ -113,7 +120,8 @@ const Expeditions = () => {
 
       {
         id: 8,
-        image: "/images/kaza.jpg",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797949/kaza_upbvbf.jpg",
         place: "Kaza High Altitude",
         district: "Lahaul & Spiti",
         type: "Trek",
@@ -124,7 +132,8 @@ const Expeditions = () => {
 
       {
         id: 9,
-        image: "/images/spiti.png",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797981/spiti_bpftg1.png",
         place: "Spiti Valley",
         district: "Lahaul & Spiti",
         type: "Valley/Scenic",
@@ -135,7 +144,8 @@ const Expeditions = () => {
 
       {
         id: 10,
-        image: "/images/chandrtaal.jpg",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798015/chandrtaal_klw2r3.jpg",
         place: "Chandratal",
         district: "Lahaul & Spiti",
         type: "Valley/Scenic",
@@ -146,7 +156,8 @@ const Expeditions = () => {
 
       {
         id: 11,
-        image: "/images/kunzum.jpg",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798042/kunzum_ldkqa8.jpg",
         place: "Kunzum Pass",
         district: "Lahaul & Spiti",
         type: "Valley/Scenic",
@@ -157,7 +168,8 @@ const Expeditions = () => {
 
       {
         id: 12,
-        image: "/images/triund.jpg",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798076/triund_bqxjrs.jpg",
         place: "Triund",
         district: "Kangra",
         type: "Trek",
@@ -168,7 +180,8 @@ const Expeditions = () => {
 
       {
         id: 13,
-        image: "/images/kareri.webp",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798113/kareri_cgz5ko.webp",
         place: "Kareri Lake",
         district: "Kangra",
         type: "Trek",
@@ -179,7 +192,8 @@ const Expeditions = () => {
 
       {
         id: 14,
-        image: "/images/glide.webp",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782797108/glide_phqtbr.webp",
         place: "Bir Billing",
         district: "Kangra",
         type: "Trek/Aero",
@@ -190,7 +204,8 @@ const Expeditions = () => {
 
       {
         id: 15,
-        image: "/images/mchleo.jpg",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798159/mchleo_ttiqfq.jpg",
         place: "Mcleodganj",
         district: "Kangra",
         type: "Valley/Scenic",
@@ -203,7 +218,8 @@ const Expeditions = () => {
 
       {
         id: 16,
-        image: "/images/manimahesh.webp",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798187/manimahesh_q7ttsw.webp",
         place: "Manimahesh Kailash",
         district: "Chamba",
         type: "Trek",
@@ -213,7 +229,8 @@ const Expeditions = () => {
       },
       {
         id: 17,
-        image: "/images/prashar.jpg", // Ensure you import this at the top
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798215/prashar_puk3it.jpg", // Ensure you import this at the top
         place: "Prashar Lake",
         district: "Mandi",
         type: "Trek",
@@ -223,7 +240,8 @@ const Expeditions = () => {
       },
       {
         id: 18,
-        image: "/images/shikari.jpg", // Ensure you import this at the top
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798244/shikari_og2866.jpg", // Ensure you import this at the top
         place: "Shikari Devi",
         district: "Mandi",
         type: "Trek",
@@ -233,7 +251,8 @@ const Expeditions = () => {
       },
       {
         id: 19,
-        image: "/images/barot.webp", // Ensure you import this at the top
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798272/barot_he7kdi.webp", // Ensure you import this at the top
         place: "Barot Valley",
         district: "Mandi",
         type: "Expedition",
@@ -243,7 +262,8 @@ const Expeditions = () => {
       },
       {
         id: 20,
-        image: "/images/rohtang.webp", // Ensure import from your assets
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798306/rohtang_it1rwc.webp", // Ensure import from your assets
         place: "Rohtang Pass",
         district: "Kullu",
         type: "Expedition",
@@ -253,7 +273,8 @@ const Expeditions = () => {
       },
       {
         id: 21,
-        image: "/images/atal.jpg",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798332/atal_dnjmgu.jpg",
         place: "Atal Tunnel",
         district: "Kullu",
         type: "Expedition",
@@ -263,7 +284,8 @@ const Expeditions = () => {
       },
       {
         id: 22,
-        image: "/images/jogini.avif",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798358/jogini_pkh66j.avif",
         place: "Jogini Waterfalls",
         district: "Kullu",
         type: "Trek",
@@ -273,7 +295,8 @@ const Expeditions = () => {
       },
       {
         id: 23,
-        image: "/images/mallroad.jpg",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798380/mallroad_yk0otj.jpg",
         place: "Manali Mall Road",
         district: "Kullu",
         type: "City Spot",
@@ -283,7 +306,8 @@ const Expeditions = () => {
       },
       {
         id: 24,
-        image: "/images/stadium.jpg",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798405/stadium_qydogb.jpg",
         place: "Dharamshala Stadium",
         district: "Kangra",
         type: "Landmark",
@@ -293,7 +317,8 @@ const Expeditions = () => {
       },
       {
         id: 25,
-        image: "/images/fort.jpg",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798445/fort_y67anv.jpg",
         place: "Kangra Fort",
         district: "Kangra",
         type: "Heritage",
@@ -303,7 +328,8 @@ const Expeditions = () => {
       },
       {
         id: 26,
-        image: "/images/pangong.webp",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798467/pangong_d4czuh.webp",
         place: "Pangong Tso",
         district: "Ladakh",
         category: "Other Frontiers",
@@ -314,7 +340,8 @@ const Expeditions = () => {
       },
       {
         id: 27,
-        image: "/images/nubra1.jpg",
+        image:
+          "https://res.cloudinary.com/dtkxhi52c/image/upload/v1782798493/nubra1_wkgkmb.jpg",
         place: "Nubra Valley",
         district: "Ladakh",
         category: "Other Frontiers",
